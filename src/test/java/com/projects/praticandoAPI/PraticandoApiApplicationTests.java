@@ -28,7 +28,7 @@ public class PraticandoApiApplicationTests {
         mockMvc
                 .perform(MockMvcRequestBuilders.get("/hello"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
-                .andExpect(MockMvcResultMatchers.content().string("Hello World!"));
+                .andExpect(MockMvcResultMatchers.content().string("Hello World Felipe Martins de Almeida!"));
     }
 
 
