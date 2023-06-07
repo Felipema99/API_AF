@@ -1,8 +1,8 @@
 FROM openjdk:8-jre-slim
-WORKDIR /praticandoAPI
-COPY target/*.war /praticandoAPI/praticandoAPI-0.0.1-SNAPSHOT.war
+WORKDIR /api_af
+COPY target/*.war /api_af/
 EXPOSE 9090
-CMD java -XX:+UseContainerSupport -Xmx512m -Dserver.port=9090 -jar praticandoAPI-0.0.1-SNAPSHOT.war 
+CMD java -XX:+UseContainerSupport -Xmx512m -Dserver.port=9090 -jar api_af
 
 
 
