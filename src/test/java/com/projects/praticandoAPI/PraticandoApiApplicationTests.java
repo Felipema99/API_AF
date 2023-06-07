@@ -9,10 +9,10 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import com.projects.praticandoAPI.controller.UsuarioController;
+import com.projects.praticandoAPI.controller.WelloWorld;
 
 
-//
+
 @RunWith(SpringRunner.class)
 //@SpringBootTest 
 @WebMvcTest(controllers = HelloWorld.class) 
@@ -30,7 +30,7 @@ public class PraticandoApiApplicationTests {
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.content().string("Felipe Martins de Almeida!"));
     }
-//
+
 
 }
 
